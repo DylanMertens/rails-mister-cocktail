@@ -1,0 +1,14 @@
+<h1>Create a new Cocktail:</h1>
+
+
+<%= form_for(@cocktails) do |f| %>
+  <p> <%= f.label :title %>
+  <%= f.text_field :title %> </p>
+
+  <p> <%= f.label :details %>
+  <%= f.text_field :details %> </p>
+
+  <%= f.submit%>
+<% end %>
+
+<p> <%= link_to "Task Overview", index_path%> </p>
